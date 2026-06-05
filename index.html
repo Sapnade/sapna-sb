@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sapna Bhatt</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- MOBILE OVERLAY -->
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar fixed-top w-100" style="z-index:50;">
+        <div class="container-xl d-flex justify-content-between align-items-center h-100 px-4">
+            <a href="#home" class="nav-logo">SB</a>
+
+            <nav class="desktop-nav d-none d-lg-flex align-items-center gap-4">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="d-flex align-items-center gap-3">
+                <a href="#contact" class="hire-btn d-none d-lg-block">Hire Me</a>
+                <button class="ham d-lg-none" id="hamBtn" onclick="toggleMenu()">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="d-flex flex-column gap-4">
+            <a href="#home" class="text-white fs-5 fw-semibold text-decoration-none" onclick="closeMenu()">Home</a>
+            <a href="#about" class="text-white fs-5 fw-semibold text-decoration-none" onclick="closeMenu()">About</a>
+            <a href="#skills" class="text-white fs-5 fw-semibold text-decoration-none" onclick="closeMenu()">Skills</a>
+            <a href="#services" class="text-white fs-5 fw-semibold text-decoration-none" onclick="closeMenu()">Services</a>
+            <a href="#projects" class="text-white fs-5 fw-semibold text-decoration-none" onclick="closeMenu()">Projects</a>
+            <a href="#experience" class="text-white fs-5 fw-semibold text-decoration-none" onclick="closeMenu()">Experience</a>
+            <a href="#contact" class="text-white fs-5 fw-semibold text-decoration-none" onclick="closeMenu()">Contact</a>
+            <a href="#contact" class="hire-btn text-center mt-3" onclick="closeMenu()">Hire Me</a>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section id="home" class="min-vh-100 d-flex align-items-center pt-5 px-3 position-relative overflow-hidden">
+        <!-- bg glow blobs -->
+        <div style="position:absolute;top:-100px;left:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,255,71,.06),transparent 70%);pointer-events:none"></div>
+        <div style="position:absolute;bottom:-150px;right:-100px;width:600px;height:600px;background:radial-gradient(circle,rgba(71,211,255,.05),transparent 70%);pointer-events:none"></div>
+
+        <div class="container-xl w-100">
+            <div class="row g-5 align-items-center">
+
+                <!-- LEFT -->
+                <div class="col-lg-4 anim-left">
+                    <div class="d-flex flex-column gap-3">
+                        <span class="tag"><span class="accent-dot me-2"></span>Available for Freelance</span>
+                        <p style="color:var(--muted);font-size:.9rem;line-height:1.7;max-width:300px">
+                            I build modern, responsive and user-friendly <strong>frontend</strong> websites with clean code and creative design.
+
+                        </p>
+                        <h1 class="hero-title text-white" style="font-size:clamp(3.5rem,9vw,7rem)">
+                            Hi, I'm<br><span class="grad-text">Sapna.Bhatt</span>
+                        </h1>
+                        <p style="color:var(--muted);font-size:.85rem;letter-spacing:2px;text-transform:uppercase">Frontend Developer · UI/UX Designer.</p>
+                        <div class="d-flex flex-wrap gap-2 pt-1">
+                            <a href="#contact" class="hire-btn">Hire Me</a>
+                            <a href="#projects" class="outline-btn">Work</a>
+                            <a href="#" class="outline-btn">Download CV</a>
+                        </div>
+                        <div class="d-flex gap-3" style="font-size:.8rem;color:var(--muted)">
+                            <span>4+ Years Exp</span>
+                            <span>·</span>
+                            <span>65+ Projects</span>
+                            <span>·</span>
+                            <span>Freelance Open</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IMAGE -->
+                <div class="col-lg-4 anim-right order-first order-lg-0 d-flex justify-content-center">
+                    <div class="position-relative">
+                        <div style="position:absolute;inset:-3px;border-radius:24px;background:linear-gradient(135deg,var(--accent),var(--accent2));z-index:-1;opacity:.4"></div>
+                        <img class="float-img object-fit-cover rounded-4 position-relative" style="width:300px;height:504px;z-index:10;" src="images/img.jpeg" alt="Profile" />
+                        <div style="position:absolute;bottom:-12px;left:-12px;background:var(--bg3);border:1px solid var(--border);border-radius:14px;padding:.8rem 1.2rem;z-index:20">
+                            <p style="font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px">Experience</p>
+                            <p style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--accent)">4+ Years</p>
+                        </div>
+                        <div style="position:absolute;top:-12px;right:-12px;background:var(--bg3);border:1px solid var(--border);border-radius:14px;padding:.8rem 1.2rem;z-index:20">
+                            <p style="font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px">Projects</p>
+                            <p style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--accent2)">65+</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="col-lg-4 anim-right text-lg-end">
+                    <div class="d-flex flex-column gap-3">
+                        <h2 class="hero-title text-white" style="font-size:clamp(3rem,7vw,6rem)">
+                            Frontend<br><span style="color:var(--accent)">Developer</span>
+                        </h2>
+                        <p style="color:var(--muted);font-size:.9rem;line-height:1.7">
+                            Creating modern digital experiences with smooth animations, clean architecture, and pixel-perfect design, focused on performance and user experience.
+
+                        </p>
+                        <div class="d-flex justify-content-lg-end gap-3">
+                            <a href="#" class="social-btn"><i class="ri-instagram-line"></i></a>
+                            <a href="#" class="social-btn"><i class="ri-github-line"></i></a>
+                            <a href="#" class="social-btn"><i class="ri-linkedin-line"></i></a>
+                            <a href="#" class="social-btn"><i class="ri-behance-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="py-5 px-3" style="border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3 reveal">
+                    <div class="stat-num">65+</div>
+                    <p style="color:var(--muted);font-size:.9rem;margin-top:.25rem">Projects Completed</p>
+                </div>
+                <div class="col-6 col-md-3 reveal">
+                    <div class="stat-num">45+</div>
+                    <p style="color:var(--muted);font-size:.9rem;margin-top:.25rem">Happy Clients</p>
+                </div>
+                <div class="col-6 col-md-3 reveal">
+                    <div class="stat-num">4+</div>
+                    <p style="color:var(--muted);font-size:.9rem;margin-top:.25rem">Years Experience</p>
+                </div>
+                <div class="col-6 col-md-3 reveal">
+                    <div class="stat-num">100%</div>
+                    <p style="color:var(--muted);font-size:.9rem;margin-top:.25rem">Responsive Designs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----logo slider----------->
+    <section class="logo-section">
+        <div class="container-fluid">
+            <h2 class="section-title text-center">Empowering<span class="grad-text"> Global Communications</span></h2>
+
+
+            <div class="slider-wrap overflow-hidden">
+                <div class="slider-wrap overflow-hidden px-lg-5">
+                    <div class="logo-track">
+                        <img src="images/logo/5.jpg" class="brand-logo">
+                        <img src="images/logo/blotz-logo-white.png" class="brand-logo">
+                        <img src="images/logo/final-logo-2.webp" class="brand-logo">
+                        <img src="images/logo/logo-4.png" class="brand-logo">
+                        <img src="images/logo/logo-6.webp" class="brand-logo">
+                        <img src="images/logo/logo-my-real-home.png" class="brand-logo">
+                        <img src="images/logo/logo-p.png" class="brand-logo">
+                        <img src="images/logo/logo.svg" class="brand-logo">
+
+                        <img src="images/logo/nimbus-logo (1).png" class="brand-logo">
+                        <img src="images/logo/nimbus-logo.png" class="brand-logo">
+                        <img src="images/logo/5.jpg" class="brand-logo">
+                        <img src="images/logo/blotz-logo-white.png" class="brand-logo">
+                        <img src="images/logo/final-logo-2.webp" class="brand-logo">
+                        <img src="images/logo/logo-4.png" class="brand-logo">
+                        <img src="images/logo/logo-6.webp" class="brand-logo">
+                        <img src="images/logo/logo-my-real-home.png" class="brand-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about" class="py-5 px-3" style="background:var(--bg2);padding-top:7rem!important;padding-bottom:7rem!important">
+        <div class="container-xl">
+            <div class="row g-5 align-items-center">
+
+                <!-- LEFT: image -->
+                <div class="col-lg-6 reveal d-flex justify-content-center">
+                    <div class="position-relative">
+                        <div style="position:absolute;inset:-2px;border-radius:24px;background:linear-gradient(135deg,rgba(232,255,71,.2),rgba(71,211,255,.2));z-index:-1"></div>
+                        <img src="images/about.jpeg" class="object-fit-cover rounded-2" style="width:100%;max-width:630px; height:600px  " alt="About" />
+
+
+                    </div>
+                </div>
+
+                <!-- RIGHT: text -->
+                <div class="col-lg-6 reveal">
+                    <div class="d-flex flex-column gap-4">
+                        <span class="section-label">Who I Am</span>
+                        <h2 class="section-title grad-text">About Me</h2>
+                        <p style="color:var(--muted);line-height:1.8">
+                            I am a dedicated <span class="text-white fw-semibold">Frontend Developer and UI/UX Designer</span> with strong experience in designing and developing responsive, modern, and user-friendly websites. My expertise lies in creating
+                            clean, visually appealing user interfaces and transforming design concepts into fully functional, interactive web applications.
+                        </p>
+                        <p style="color:var(--muted);line-height:1.8">
+                            I focus on writing clean and efficient code using modern web technologies, ensuring every project is optimized for performance, accessibility, and responsiveness across all devices. I enjoy building seamless digital experiences that not only look great
+                            but also provide smooth and intuitive user interactions.
+                        </p>
+                        <p style="color:var(--muted);line-height:1.8">
+                            With a strong eye for detail and a passion for design, I bridge the gap between design and development — turning creative ideas into real-world digital products that are both aesthetically pleasing and technically strong.
+                        </p>
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="px-3" style="padding-top:7rem;padding-bottom:7rem">
+        <div class="container-xl">
+            <div class="text-center mb-5 reveal">
+                <span class="section-label">What I Know</span>
+                <h2 class="section-title">My <span class="grad-text">Skills</span></h2>
+            </div>
+
+            <div class="row g-5">
+
+                <!-- Skill Bars -->
+                <div class="col-lg-6 reveal">
+                    <div class="d-flex flex-column gap-4">
+                        <h3 style="font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:var(--muted)">Proficiency</h3>
+
+                        <div class="skill-item" data-pct="95">
+                            <div class="d-flex justify-content-between mb-2"><span class="fw-medium">HTML5 / CSS3</span><span style="color:var(--accent);font-size:.9rem;font-weight:600">95%</span></div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-pct="90">
+                            <div class="d-flex justify-content-between mb-2"><span class="fw-medium">JavaScript (ES6+)</span><span style="color:var(--accent);font-size:.9rem;font-weight:600">90%</span></div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-pct="80">
+                            <div class="d-flex justify-content-between mb-2"><span class="fw-medium">Bootstrap 5 / Tailwind CSS</span><span style="color:var(--accent);font-size:.9rem;font-weight:600">90%</span></div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-pct="88">
+                            <div class="d-flex justify-content-between mb-2"><span class="fw-medium">Figma / UI/UX Design</span><span style="color:var(--accent);font-size:.9rem;font-weight:600">88%</span></div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-pct="78">
+                            <div class="d-flex justify-content-between mb-2"><span class="fw-medium">PHP / MySQL</span><span style="color:var(--accent);font-size:.9rem;font-weight:600">78%</span></div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-pct="85">
+                            <div class="d-flex justify-content-between mb-2"><span class="fw-medium">React JS</span><span style="color:var(--accent);font-size:.9rem;font-weight:600">50%</span></div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Pills -->
+                <div class="col-lg-6 reveal">
+                    <div class="d-flex flex-column gap-4">
+                        <div>
+                            <h3 style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:var(--muted);margin-bottom:1rem">Frontend</h3>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="skill-pill">HTML5</span><span class="skill-pill">CSS3</span>
+                                <span class="skill-pill">JavaScript</span><span class="skill-pill">React JS</span>
+                                <span class="skill-pill">Bootstrap 5</span><span class="skill-pill">Tailwind CSS</span>
+                                <span class="skill-pill">XHTML</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:var(--muted);margin-bottom:1rem">Backend</h3>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="skill-pill">PHP</span><span class="skill-pill">MySQL</span>
+
+                            </div>
+                        </div>
+                        <div>
+                            <h3 style="font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:var(--muted);margin-bottom:1rem">Design</h3>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="skill-pill">Figma</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="px-3" style="background:var(--bg2);padding-top:5rem;padding-bottom:5rem">
+        <div class="container-xl">
+
+            <div class="text-center mb-5 reveal">
+                <span class="section-label">My Toolkit</span>
+                <h2 class="section-title">Tools & <span class="grad-text">Technologies</span></h2>
+            </div>
+
+            <div class="reveal row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3">
+
+                <!-- Frontend -->
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-html5-fill"></i><span>HTML5</span></div>
+                </div>
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-css3-fill"></i><span>CSS3</span></div>
+                </div>
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-javascript-fill"></i><span>JavaScript</span></div>
+                </div>
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-bootstrap-fill"></i><span>Bootstrap 5</span></div>
+                </div>
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-css3-fill"></i><span>Tailwind CSS</span></div>
+                </div>
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-reactjs-line"></i><span>React JS</span></div>
+                </div>
+
+                <!-- Backend -->
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-php-fill"></i><span>PHP</span></div>
+                </div>
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-database-2-line"></i><span>MySQL</span></div>
+                </div>
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-database-fill"></i><span>phpMyAdmin</span></div>
+                </div>
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-code-s-slash-line"></i><span>Core PHP</span></div>
+                </div>
+
+                <!-- Framework -->
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-code-box-line"></i><span>XAMPP</span></div>
+                </div>
+
+                <!-- Design -->
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-pen-nib-fill"></i><span>Figma</span></div>
+                </div>
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-palette-line"></i><span>Canva</span></div>
+                </div>
+
+                <!-- Dev Tools -->
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-vscode-fill"></i><span>VS Code</span></div>
+                </div>
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-github-fill"></i><span>GitHub</span></div>
+                </div>
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-terminal-box-line"></i><span>npm</span></div>
+                </div>
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-chrome-line"></i><span>DevTools</span></div>
+                </div>
+
+                <!-- Deployment -->
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-cloud-line"></i><span>FileZilla</span></div>
+                </div>
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-server-line"></i><span>cPanel</span></div>
+                </div>
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-global-line"></i><span>Hosting</span></div>
+                </div>
+
+                <!-- Other Skills -->
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-layout-masonry-fill"></i><span>Responsive Design</span></div>
+                </div>
+                <div class="col">
+                    <div class="tool-chip"><i class="ri-settings-3-line"></i><span>API Integration</span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="px-3" style="padding-top:7rem;padding-bottom:7rem">
+        <div class="container-xl">
+            <div class="text-center mb-5 reveal">
+                <span class="section-label">What I Do</span>
+                <h2 class="section-title">Services I <span class="grad-text">Offer</span></h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card reveal p-4 h-100">
+                        <div class="service-icon"><i class="ri-pen-nib-line"></i></div>
+                        <h3 class="fw-bold fs-5 mb-2">Figma Design</h3>
+                        <p style="color:var(--muted);font-size:.9rem;line-height:1.7">
+                            Modern Figma-based UI designs including wireframes, prototypes, and responsive website layouts focused on clean structure and user-friendly experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card reveal p-4 h-100">
+                        <div class="service-icon"><i class="ri-code-s-slash-line"></i></div>
+                        <h3 class="fw-bold fs-5 mb-2">Frontend Development</h3>
+                        <p style="color:var(--muted);font-size:.9rem;line-height:1.7">Pixel-perfect, responsive websites built with React, Bootstrap, and modern CSS.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card reveal p-4 h-100">
+                        <div class="service-icon"><i class="ri-rocket-line"></i></div>
+                        <h3 class="fw-bold fs-5 mb-2">Landing Pages</h3>
+                        <p style="color:var(--muted);font-size:.9rem;line-height:1.7">High-conversion landing pages for startups and businesses that capture leads effectively.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card reveal p-4 h-100">
+                        <div class="service-icon"><i class="ri-shopping-cart-2-line"></i></div>
+                        <h3 class="fw-bold fs-5 mb-2">E-Commerce</h3>
+                        <p style="color:var(--muted);font-size:.9rem;line-height:1.7">Full shopping experiences with product listings, carts, and clean checkout flows.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card reveal p-4 h-100">
+                        <div class="service-icon"><i class="ri-global-line"></i></div>
+                        <h3 class="fw-bold fs-5 mb-2">Website Design</h3>
+                        <p style="color:var(--muted);font-size:.9rem;line-height:1.7">Modern, brand-aligned website designs for corporate, personal, and startup projects.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card reveal p-4 h-100">
+                        <div class="service-icon"><i class="ri-briefcase-4-line"></i></div>
+                        <h3 class="fw-bold fs-5 mb-2">Portfolio Websites</h3>
+                        <p style="color:var(--muted);font-size:.9rem;line-height:1.7">Creative portfolio sites for designers, developers, photographers, and creators.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card reveal p-4 h-100">
+                        <div class="service-icon"><i class="ri-refresh-line"></i></div>
+                        <h3 class="fw-bold fs-5 mb-2">Website Redesign</h3>
+                        <p style="color:var(--muted);font-size:.9rem;line-height:1.7">Modernize your outdated website with a fresh, fast, and user-friendly new design.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card reveal p-4 h-100">
+                        <div class="service-icon"><i class="ri-tools-line"></i></div>
+                        <h3 class="fw-bold fs-5 mb-2">Maintenance</h3>
+                        <p style="color:var(--muted);font-size:.9rem;line-height:1.7">Ongoing support, bug fixes, updates, and performance improvements for your website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="px-3" style="background:var(--bg2);padding-top:7rem;padding-bottom:7rem">
+        <div class="container-xl">
+
+            <div class="text-center mb-5 reveal">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">My <span class="grad-text">Projects</span></h2>
+                <p style="color:var(--muted);margin-top:1rem">Real-world responsive websites & full-stack work</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- CARD TEMPLATE START -->
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card reveal p-4 h-100 d-flex flex-column gap-3">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="project-tag">Real Estate</span>
+                            <a href="https://www.propertykikhoj.com/" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+
+                        <h3 class="fw-bold fs-5">
+                            <a href="https://www.propertykikhoj.com/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;position:relative;z-index:5">
+                        Property Ki Khoj
+                        </a>
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card reveal p-4 h-100 d-flex flex-column gap-3">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="project-tag">Real Estate</span>
+                            <a href="https://propertyle.com/" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+
+                        <h3 class="fw-bold fs-5">
+                            <a href="https://propertyle.com/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;position:relative;z-index:5">
+                        Propertyle
+                        </a>
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card reveal p-4 h-100 d-flex flex-column gap-3">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="project-tag">Real Estate</span>
+                            <a href="https://vimanvihartappal.com/" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+
+                        <h3 class="fw-bold fs-5">
+                            <a href="https://vimanvihartappal.com/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;position:relative;z-index:5">
+                        Viman Vihar Tappal
+                        </a>
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card reveal p-4 h-100 d-flex flex-column gap-3">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="project-tag">Business</span>
+                            <a href="https://boltzenergy.in/" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+
+                        <h3 class="fw-bold fs-5">
+                            <a href="https://boltzenergy.in/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;position:relative;z-index:5">
+                        Boltz Energy
+                        </a>
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card reveal p-4 h-100 d-flex flex-column gap-3">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="project-tag">System</span>
+                            <a href="https://bulkemail.nimbusitsolutions.com/" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+
+                        <h3 class="fw-bold fs-5">
+                            <a href="https://bulkemail.nimbusitsolutions.com/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;position:relative;z-index:5">
+                        Bulk Email System
+                        </a>
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card reveal p-4 h-100 d-flex flex-column gap-3">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="project-tag">Corporate</span>
+                            <a href="https://www.dkcommunications.in/" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+
+                        <h3 class="fw-bold fs-5">
+                            <a href="https://www.dkcommunications.in/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;position:relative;z-index:5">
+                        DK Communications
+                        </a>
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card reveal p-4 h-100 d-flex flex-column gap-3">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="project-tag">CRM</span>
+                            <a href="https://demo1.mailxing.in/nimbus-it-solution/" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+
+                        <h3 class="fw-bold fs-5">
+                            <a href="https://demo1.mailxing.in/nimbus-it-solution/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;position:relative;z-index:5">
+                        Nimbus IT Solution CRM
+                        </a>
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card reveal p-4 h-100 d-flex flex-column gap-3">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="project-tag">Real Estate</span>
+                            <a href="https://demo1.mailxing.in/myrealhome/" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+
+                        <h3 class="fw-bold fs-5">
+                            <a href="https://demo1.mailxing.in/myrealhome/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;position:relative;z-index:5">
+                        My Real Home
+                        </a>
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card reveal p-4 h-100 d-flex flex-column gap-3">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="project-tag">Corporate</span>
+                            <a href="https://www.nimbusbpo.com/" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+
+                        <h3 class="fw-bold fs-5">
+                            <a href="https://www.nimbusbpo.com/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;position:relative;z-index:5">
+                        Nimbus BPO
+                        </a>
+                        </h3>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card reveal p-4 h-100 d-flex flex-column gap-3">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="project-tag">Landing Page</span>
+                            <a href="https://nimbusad.com/purnima-padmasna/" target="_blank" rel="noopener noreferrer">
+                                <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+
+                        <h3 class="fw-bold fs-5">
+                            <a href="https://nimbusad.com/purnima-padmasna/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;position:relative;z-index:5">
+                        Purnima Padmasna
+                        </a>
+                        </h3>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE + EDUCATION -->
+    <section id="experience" class="px-3" style="padding-top:7rem;padding-bottom:7rem">
+        <div class="container-xl">
+            <div class="row g-5">
+
+                <!-- Experience -->
+                <div class="col-lg-6 reveal">
+                    <span class="section-label">Work History</span>
+                    <h2 class="section-title mb-4">Work <span class="grad-text">Experience</span></h2>
+
+                    <div class="d-flex gap-4">
+
+                        <div class="d-flex flex-column align-items-center gap-2 pt-1">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-line" style="flex:1;min-height:600px"></div>
+                        </div>
+
+                        <div class="glass-card p-4 flex-fill">
+
+                            <!-- Nimbus Adcom -->
+                            <div class="mb-4">
+                                <div class="d-flex align-items-start justify-content-between flex-wrap gap-2 mb-2">
+                                    <div>
+                                        <h3 class="fw-bold fs-5">Frontend & Backend Developer</h3>
+                                        <p style="color:var(--accent);font-size:.85rem;font-weight:600">
+                                            Nimbus Adcom Pvt. Ltd., Noida
+                                        </p>
+                                    </div>
+                                    <span class="tag" style="font-size:.7rem">Jan 2025 – Present</span>
+                                </div>
+
+                                <div class="d-flex flex-column gap-2" style="color:var(--muted);font-size:.9rem">
+                                    <div class="d-flex align-items-start gap-2"><i class="ri-arrow-right-s-line mt-1" style="color:var(--accent)"></i>Handled direct client meetings — gathered requirements and translated visions into production-ready websites.</div>
+                                    <div class="d-flex align-items-start gap-2"><i class="ri-arrow-right-s-line mt-1" style="color:var(--accent)"></i>Designed in Figma; built pixel-perfect pages using HTML5, CSS3, React.js, Bootstrap 5 and Tailwind CSS.</div>
+                                    <div class="d-flex align-items-start gap-2"><i class="ri-arrow-right-s-line mt-1" style="color:var(--accent)"></i>Backend integration via PHP, phpMyAdmin and MySQL on live servers; API testing with Postman.</div>
+                                    <div class="d-flex align-items-start gap-2"><i class="ri-arrow-right-s-line mt-1" style="color:var(--accent)"></i>Used AI tools (ChatGPT, Claude, Gemini) to accelerate development and solve complex challenges.</div>
+                                    <div class="d-flex align-items-start gap-2"><i class="ri-arrow-right-s-line mt-1" style="color:var(--accent)"></i>Delivered 11+ live projects across real estate, aviation, email platforms and NGO sectors.</div>
+                                </div>
+                            </div>
+
+                            <!-- Xomate Technologies -->
+                            <div class="mb-4">
+                                <div class="d-flex align-items-start justify-content-between flex-wrap gap-2 mb-2">
+                                    <div>
+                                        <h3 class="fw-bold fs-5">Frontend Developer</h3>
+                                        <p style="color:var(--accent);font-size:.85rem;font-weight:600">
+                                            Xomate Technologies Pvt. Ltd., Noida
+                                        </p>
+                                    </div>
+                                    <span class="tag" style="font-size:.7rem">2023 – 2024</span>
+                                </div>
+
+                                <div class="d-flex flex-column gap-2" style="color:var(--muted);font-size:.9rem">
+                                    <div class="d-flex align-items-start gap-2"><i class="ri-arrow-right-s-line mt-1" style="color:var(--accent)"></i>Designed and developed client websites using WordPress and Elementor with server-side configuration.</div>
+                                    <div class="d-flex align-items-start gap-2"><i class="ri-arrow-right-s-line mt-1" style="color:var(--accent)"></i>Delivered cross-browser compatible, mobile-first responsive layouts for diverse client briefs.</div>
+                                </div>
+                            </div>
+
+                            <!-- Mentortca Internship -->
+                            <div>
+                                <div class="d-flex align-items-start justify-content-between flex-wrap gap-2 mb-2">
+                                    <div>
+                                        <h3 class="fw-bold fs-5">Java Developer Intern</h3>
+                                        <p style="color:var(--accent);font-size:.85rem;font-weight:600">
+                                            Mentortca Technology Pvt. Ltd., Gurgaon
+                                        </p>
+                                    </div>
+                                    <span class="tag" style="font-size:.7rem">May – Nov 2023</span>
+                                </div>
+
+                                <div class="d-flex flex-column gap-2" style="color:var(--muted);font-size:.9rem">
+                                    <div class="d-flex align-items-start gap-2"><i class="ri-arrow-right-s-line mt-1" style="color:var(--accent)"></i>6-month full stack Java internship — Spring Boot, Hibernate and MySQL backend development.</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="col-lg-6 reveal">
+                    <span class="section-label">Academic Background</span>
+                    <h2 class="section-title mb-4">My <span class="grad-text">Education</span></h2>
+
+                    <div class="d-flex flex-column gap-4">
+                        <div class="d-flex gap-4">
+                            <div class="d-flex flex-column align-items-center gap-2 pt-1">
+                                <div class="timeline-dot" style="background:var(--accent2);box-shadow:0 0 12px var(--accent2)"></div>
+                                <div class="timeline-line" style="height:80px"></div>
+                            </div>
+                            <div class="glass-card p-4 flex-fill">
+                                <div class="d-flex align-items-start justify-content-between flex-wrap gap-2">
+                                    <div>
+                                        <h3 class="fw-bold">Bachelor in Computer Applications</h3>
+                                        <p style="color:var(--accent2);font-size:.85rem">BCA · Computer Science</p>
+                                    </div>
+                                    <span class="tag" style="font-size:.7rem">Graduated</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-4">
+                            <div class="d-flex flex-column align-items-center gap-2 pt-1">
+                                <div class="timeline-dot" style="background:var(--accent2);box-shadow:0 0 12px var(--accent2)"></div>
+                            </div>
+                            <div class="glass-card p-4 flex-fill">
+                                <div class="d-flex align-items-start justify-content-between flex-wrap gap-2">
+                                    <div>
+                                        <h3 class="fw-bold">Full Stack Java Development Certification</h3>
+                                        <p style="color:var(--accent2);font-size:.85rem">Java Development + Backend Programming</p>
+                                    </div>
+                                    <span class="tag" style="font-size:.7rem">Certified</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="px-3" style="background:var(--bg2);padding-top:7rem;padding-bottom:7rem">
+        <div class="container-xl">
+            <div class="text-center mb-5 reveal">
+                <span class="section-label">What Clients Say</span>
+                <h2 class="section-title">Client <span class="grad-text">Testimonials</span></h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="glass-card reveal p-4 p-md-5">
+                        <div class="quote-mark">"</div>
+                        <p style="color:var(--muted);line-height:1.8;margin-top:.5rem;margin-bottom:1.5rem"> “We are extremely satisfied with the website developed for us. The project was completed professionally with great attention to detail and timely delivery. Special thanks to Ms. Sapna Bhatt for her excellent support and responsiveness
+                            throughout the project.”</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700;color:#000;font-size:.9rem;flex-shrink:0">V</div>
+                            <div>
+                                <p class="fw-semibold" style="font-size:.9rem">Vinod Bisht</p>
+                                <p style="color:var(--muted);font-size:.8rem"> CEO</p>
+                            </div>
+                            <div class="ms-auto d-flex gap-1">
+                                <i class="ri-star-fill" style="color:var(--accent);font-size:.75rem"></i>
+                                <i class="ri-star-fill" style="color:var(--accent);font-size:.75rem"></i>
+                                <i class="ri-star-fill" style="color:var(--accent);font-size:.75rem"></i>
+                                <i class="ri-star-fill" style="color:var(--accent);font-size:.75rem"></i>
+                                <i class="ri-star-fill" style="color:var(--accent);font-size:.75rem"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card reveal p-4 p-md-5">
+                        <div class="quote-mark">"</div>
+                        <p style="color:var(--muted);line-height:1.8;margin-top:.5rem;margin-bottom:1.5rem"> “Thank you for successfully delivering our website project. The final website exceeded our expectations, and we truly appreciate the hard work, dedication, and smooth communication during the entire process. Special appreciation
+                            ”
+                        </p>
+                        <div class="d-flex align-items-center gap-3">
+                            <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--accent2),#a855f7);display:flex;align-items:center;justify-content:center;font-weight:700;color:#000;font-size:.9rem;flex-shrink:0">A</div>
+                            <div>
+                                <p class="fw-semibold" style="font-size:.9rem">Ajay Saxena</p>
+                                <p style="color:var(--muted);font-size:.8rem">Director</p>
+                            </div>
+                            <div class="ms-auto d-flex gap-1">
+                                <i class="ri-star-fill" style="color:var(--accent);font-size:.75rem"></i>
+                                <i class="ri-star-fill" style="color:var(--accent);font-size:.75rem"></i>
+                                <i class="ri-star-fill" style="color:var(--accent);font-size:.75rem"></i>
+                                <i class="ri-star-fill" style="color:var(--accent);font-size:.75rem"></i>
+                                <i class="ri-star-fill" style="color:var(--accent);font-size:.75rem"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card reveal p-4 p-md-5">
+                        <div class="quote-mark">"</div>
+                        <p style="color:var(--muted);line-height:1.8;margin-top:.5rem;margin-bottom:1.5rem">“It was a great experience working with the development team. The website was delivered on time with a professional design and smooth functionality. We truly appreciate the dedication, quick response,Special thanks .”
+                        </p>
+                        <div class="d-flex align-items-center gap-3">
+                            <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#f97316,var(--accent));display:flex;align-items:center;justify-content:center;font-weight:700;color:#000;font-size:.9rem;flex-shrink:0">P</div>
+                            <div>
+                                <p class="fw-semibold" style="font-size:.9rem">
+                                    Purnima Padmasna</p>
+                                <p style="color:var(--muted);font-size:.8rem"> Director</p>
+                            </div>
+                            <div class="ms-auto d-flex gap-1">
+                                <i class="ri-star-fill" style="color:var(--accent);font-size:.75rem"></i>
+                                <i class="ri-star-fill" style="color:var(--accent);font-size:.75rem"></i>
+                                <i class="ri-star-fill" style="color:var(--accent);font-size:.75rem"></i>
+                                <i class="ri-star-fill" style="color:var(--accent);font-size:.75rem"></i>
+                                <i class="ri-star-fill" style="color:var(--accent);font-size:.75rem"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-section   ">
+            <div class="container">
+                <div class="layout">
+
+                    <div>
+                        <span class="section-label">Get In Touch</span>
+                        <h2 class="section-title">Let's <span class="grad-text">Work Together</span></h2>
+                        <p class="subtitle">Have a project in mind? I'd love to hear about it. Send me a message and let's create something great together.</p>
+
+                        <div class="info-cards">
+                            <a href="mailto:sapnabhatt00@gmail.com" class="info-card">
+                                <div class="icon-box"><i class="ri-mail-line"></i></div>
+                                <div>
+                                    <p class="card-label">Email</p>
+                                    <p class="card-value">sapnabhatt00@gmail.com</p>
+                                </div>
+                                <i class="ri-arrow-right-up-line arrow"></i>
+                            </a>
+                            <a href="tel:+91XXXXXXXXXX" class="info-card">
+                                <div class="icon-box"><i class="ri-phone-line"></i></div>
+                                <div>
+                                    <p class="card-label">Phone</p>
+                                    <p class="card-value">+91 XXXXX XXXXX</p>
+                                </div>
+                                <i class="ri-arrow-right-up-line arrow"></i>
+                            </a>
+                            <div class="info-card" style="cursor:default;">
+                                <div class="icon-box"><i class="ri-map-pin-line"></i></div>
+                                <div>
+                                    <p class="card-label">Location</p>
+                                    <p class="card-value">Noida Sector 26</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="socials">
+                            <p>Find me on</p>
+                            <div class="social-row">
+                                <a href="https://www.linkedin.com/in/sapna-bhatt-9b567a197/" class="social-btn"><i class="ri-linkedin-fill"></i></a>
+                                <a href="#" class="social-btn"><i class="ri-github-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-card">
+                        <div id="formView">
+                            <h3>Send a Message</h3>
+                            <div class="row2">
+                                <div class="field">
+                                    <label for="cf-name">Full Name</label>
+                                    <input type="text" id="cf-name" placeholder="Your Name">
+                                    <span class="err-msg" id="err-name">Name is required</span>
+                                </div>
+                                <div class="field">
+                                    <label for="cf-email">Email</label>
+                                    <input type="email" id="cf-email" placeholder="your@email.com">
+                                    <span class="err-msg" id="err-email">Valid email required</span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="cf-subject">Subject</label>
+                                <input type="text" id="cf-subject" placeholder="Project Inquiry">
+                                <span class="err-msg" id="err-subject">Subject is required</span>
+                            </div>
+                            <div class="field">
+                                <label for="cf-message">Message</label>
+                                <textarea id="cf-message" placeholder="Tell me about your project..."></textarea>
+                                <span class="err-msg" id="err-message">Message is required</span>
+                            </div>
+                            <button class="send-btn" onclick="handleSend()">
+            <i class="ri-send-plane-line"></i> Send Message
+          </button>
+                        </div>
+
+                        <div id="successView" class="success-box">
+                            <div class="success-icon"><i class="ri-check-line"></i></div>
+                            <p style="color:#fff;font-size:20px;font-weight:700;">Message Sent!</p>
+                            <p style="color:#888;font-size:14px;">Thank you! I'll get back to you soon.</p>
+                            <button class="send-btn" style="width:auto;padding:12px 28px;margin-top:8px" onclick="resetForm()">Send Another</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="py-5 px-3">
+        <div class="container-xl d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+            <h1 class="nav-logo mb-0">SB</h1>
+            <p style="color:var(--muted);font-size:.9rem;text-align:center">
+                "Creating modern web experiences with clean code and creativity."
+            </p>
+            <p style="color:var(--muted);font-size:.9rem">© 2026 Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // MOBILE MENU
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.toggle('open');
+            document.getElementById('overlay').classList.toggle('open');
+            document.getElementById('hamBtn').classList.toggle('active');
+        }
+
+        function closeMenu() {
+            document.getElementById('mobileMenu').classList.remove('open');
+            document.getElementById('overlay').classList.remove('open');
+            document.getElementById('hamBtn').classList.remove('active');
+        }
+
+        // SCROLL REVEAL
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+        reveals.forEach(r => observer.observe(r));
+
+        // SKILL BAR ANIMATION
+        const skillItems = document.querySelectorAll('.skill-item');
+        const skillObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    const bar = e.target.querySelector('.skill-bar-fill');
+                    const pct = e.target.dataset.pct;
+                    setTimeout(() => {
+                        bar.style.width = pct + '%';
+                    }, 200);
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+        skillItems.forEach(s => skillObs.observe(s));
+
+        // GLASS CARD MOUSE TRACKING
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / rect.width) * 100;
+                const y = ((e.clientY - rect.top) / rect.height) * 100;
+                card.style.setProperty('--mx', x + '%');
+                card.style.setProperty('--my', y + '%');
+            });
+        });
+
+
+        // ACTIVE NAV ON SCROLL
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(s => {
+                if (window.scrollY >= s.offsetTop - 120) current = s.id;
+            });
+            navLinks.forEach(l => {
+                l.style.color = l.getAttribute('href') === '#' + current ? 'var(--text)' : '';
+            });
+        });
+    </script>
+    <script>
+        function handleSend() {
+            let ok = true;
+            const fields = [{
+                id: 'cf-name',
+                err: 'err-name',
+                check: v => v.trim() !== ''
+            }, {
+                id: 'cf-email',
+                err: 'err-email',
+                check: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)
+            }, {
+                id: 'cf-subject',
+                err: 'err-subject',
+                check: v => v.trim() !== ''
+            }, {
+                id: 'cf-message',
+                err: 'err-message',
+                check: v => v.trim() !== ''
+            }];
+            fields.forEach(f => {
+                const el = document.getElementById(f.id);
+                const errEl = document.getElementById(f.err);
+                if (!f.check(el.value)) {
+                    el.classList.add('err');
+                    errEl.classList.add('show');
+                    ok = false;
+                } else {
+                    el.classList.remove('err');
+                    errEl.classList.remove('show');
+                }
+            });
+            if (!ok) return;
+            document.getElementById('formView').style.display = 'none';
+            document.getElementById('successView').style.display = 'flex';
+        }
+
+        function resetForm() {
+            ['cf-name', 'cf-email', 'cf-subject', 'cf-message'].forEach(id => {
+                document.getElementById(id).value = '';
+                document.getElementById(id).classList.remove('err');
+            });
+            ['err-name', 'err-email', 'err-subject', 'err-message'].forEach(id => {
+                document.getElementById(id).classList.remove('show');
+            });
+            document.getElementById('successView').style.display = 'none';
+            document.getElementById('formView').style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
